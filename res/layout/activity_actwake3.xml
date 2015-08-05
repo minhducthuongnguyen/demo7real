@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.demo7real.Actwake3" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-thin"
+        android:background="@android:color/transparent"
+		android:textColor="#696969"
+        android:textSize="60sp"
+        
+        android:clickable="false"
+        android:text="x"
+        android:onClick="Stop"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:fontFamily="sans-serif-thin"
+		android:textColor="#ffffff"
+
+		android:background="@android:color/transparent"
+        android:ems="10"
+        android:textSize="25sp"
+        android:hint="Guess between 0-10000"
+        android:gravity="center"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+		android:textColor="#ffffff"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textSize="25sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>

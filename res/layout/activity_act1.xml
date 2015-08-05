@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    tools:context="com.example.demo7real.Act1" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="addalarm"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="60sp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="900dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:background="#333333" >
+    </ListView>
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView1"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_marginRight="30dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="DigitalClock"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:onClick="secret"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-thin"
+        android:layout_centerHorizontal="true"
+        android:text="/howdyworld/" />
+
+</RelativeLayout>
